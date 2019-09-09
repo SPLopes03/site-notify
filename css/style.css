@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+}
+header h1 {
+    font-family: 'Pacifico', cursive;
+}
+header p {
+    font-family: 'Roboto', sans-serif;
+}
+.icones {
+    border: black;
+}
