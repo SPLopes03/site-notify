@@ -1,5 +1,13 @@
 body {
     margin: 0;
+    display: grid;
+    grid-template-areas: 'nav' 'nav'
+                         'header'
+                         'main'
+                         'aside'
+                         'section'
+                         'footer';
+    grid-template-columns: 100vw;
 }
 header h1 {
     font-family: 'Pacifico', cursive;
@@ -8,5 +16,27 @@ header p {
     font-family: 'Roboto', sans-serif;
 }
 .icones {
-    border: black;
+    justify-content: center;
+    display: flex;
+    /* border-radius: 10px;
+    color: rgba(67, 65, 54, 0.7) */
+}
+nav {
+    grid-area: nav;
+}
+header {
+    grid-area: header;
+}
+main {
+    grid-area: main;
+}
+aside {
+    grid-area: aside;
+    background-color: rgb(180, 180, 180);
+}
+section {
+    grid-area: section;
+}
+footer {
+    grid-area: footer;
 }
