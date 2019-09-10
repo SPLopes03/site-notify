@@ -7,7 +7,7 @@ body {
                          'aside'
                          'section'
                          'footer';
-    grid-template-columns: 100vw;
+    grid-template-columns: 130vw;
 }
 header {
     background-image: url("../images/banner.png");
@@ -17,15 +17,15 @@ header {
 }
 header h1 {
     font-family: 'Pacifico', cursive;
-    color:  #f8f8f8;
+    color:  #ffffff;
     padding: 0 25px;
 }
 header h1 span {
-    color: #48b960;
+    color: ##2acd70;
 }
 header p {
     font-family: 'Roboto', sans-serif;
-    color: #f8f8f8;
+    color: #ffffff;
     font-size: 17px;
     padding: 0 25px;
 }
@@ -40,22 +40,48 @@ header p {
 nav {
     grid-area: nav;
     margin-top: 0;
-    background-color: #48b960;
-    height: 5px;
+    background-color: #2ac96f;
+    height: 7px;
 }
+
 header {
     grid-area: header;
 }
 main {
     grid-area: main;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.icones_menu img{
+    display: flex;
+    justify-content:flex-start;
+    padding: 0 25px;
 }
 aside {
     grid-area: aside;
-    background-color: rgb(180, 180, 180);
+    background-color: #e3e3e3;
+    height: 350px;
 }
 section {
     grid-area: section;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+section p{
+    text-align: center;
+    width: 300px;
+
 }
 footer {
+    background-color: #e3e3e3;
+    display: flex;
     grid-area: footer;
+    justify-content: center;
+}
+
+footer p{
+    padding: 10px;
 }
