@@ -37,6 +37,18 @@ header p {
 .icones div{
     margin: 0 5px;
 }
+.icones a:hover {
+    background-color: #2acd70;
+}
+header .icones img {
+    display: flex;
+    background-color: black;
+    opacity: 0.5;
+    padding: 3px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
 nav {
     grid-area: nav;
     margin-top: 0;
@@ -88,7 +100,7 @@ aside p {
     color: white;
     width: 20px;
     height: 20px;
-    padding: 
+    border-radius: 0 15px 15px 0;
 }
 section {
     grid-area: section;
