@@ -1,3 +1,5 @@
+/*códigos comentados no tamanho de 320px*/
+
 @media(min-width: 320px){
     
     .email span {
@@ -28,6 +30,14 @@
        flex-direction: column;
     }
 
+    .img_rostos{
+        display: flex;
+        height: 50px;
+        width: 600px;
+        flex-direction: column;
+        flex-flow: wrap;
+    }
+
 
     aside {
         grid-area: aside;
@@ -55,6 +65,7 @@
         width: 300px;
     }
     
+    /*Remove a barra de corre lateral do navegador*/
     body::-webkit-scrollbar{
         width: 0px;
         background: transparent;
@@ -159,22 +170,107 @@
     }
 }
 
+/* Acho que não vai precisa nesse tamnho pq ele ajusta sozinho */
+/* @media(min-width: 425px){
 
-@media(min-width: 425px){
-
-}
+} */
 
 @media(min-width:768px) {
-    main .icones_menu {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
+
+    body {
+        margin: 0;
+        display: grid;
+        grid-template-areas: 'nav'      'nav'
+                             'header'   'header'
+                             'main'     'main'
+                             'aside'    'aside'
+                             'section'  'section'
+                             'footer'   'footer';
+        grid-template-columns: 100vw;
     }
+
+    main{
+        grid-area: main;
+        align-items: center;
+    }
+    
+    /* .icones_menu{
+        display: flex;
+    } */
+    
+    .image_menu{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .img_rostos{
+        display: flex;
+        height: 50px;
+        width: 500px;
+    }
+
+
+    nav{
+        grid-area: nav;
+    }
+    
+    aside{
+        grid-area: aside;
+    }
+    
+    header{
+        grid-area: header;
+
+    }
+    
+    
+    footer{
+        grid-area: footer;
+        display: flex;
+        padding: 10px;
+        justify-content: space-around;
+    }
+    
+    /* section{
+        grid-area: section;
+        display: flex;
+        align-items: center;
+    } */
+
+    section {
+        grid-area: section;
+        flex-direction: column;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    section p{
+        width: 500px;
+        /* display: block; */
+    }
+
+
+
+
 }
+
 
 
 @media(min-width: 1024px){
 
+    body {
+        margin: 0;
+        display: grid;
+        grid-template-areas: 'nav'      'nav'
+                             'header'   'header'
+                             'main'     'main'
+                             'aside'    'aside'
+                             'section'  'section'
+                             'footer'   'footer';
+        grid-template-columns: 100vw;
+
+
+    }
 }
 
 
