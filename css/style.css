@@ -21,7 +21,7 @@ header h1 {
     padding: 0 25px;
 }
 header h1 span {
-    color: ##2acd70;
+    color: #2acd70;
 }
 header p {
     font-family: 'Roboto', sans-serif;
@@ -80,6 +80,15 @@ aside {
 }
 aside p {
     color: #8f8f8f;
+}
+.email span {
+    background-color: #2ac96f;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: white;
+    width: 20px;
+    height: 20px;
+    padding: 
 }
 section {
     grid-area: section;
