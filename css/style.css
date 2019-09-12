@@ -19,6 +19,8 @@
         grid-template-columns: 100vw;
         text-decoration: none;
         font-family: 'Roboto', sans-serif;
+        /* align-items: center; */
+        text-align: center;
     }
     
     /* .conteudo {
@@ -260,12 +262,6 @@
         height: 40px;
     }
     
-    main h2{
-        font-size: 18px;
-        width: 200px;
-        padding-left:  25%;
-    }
-    
     nav {
         grid-area: nav;
         background-color: #2ac96f;
@@ -293,7 +289,6 @@
 
 /* TESTE!!! 
 só modifiquei a section o resto se ajusta não precisa mexer */
-
 @media(min-width: 430px){
     /* figure{
         display: flex;
@@ -303,7 +298,7 @@ só modifiquei a section o resto se ajusta não precisa mexer */
         justify-content: space-around;
     } */
 }
-
+/* ======================================================== */
 
 @media(min-width:768px) {
 
@@ -372,26 +367,10 @@ só modifiquei a section o resto se ajusta não precisa mexer */
     }
 
 
-
-
-
 }
 
 @media(min-width: 1024px){
     
-    body {
-        margin: 0;
-        display: grid;
-        grid-template-areas: 'nav'      'nav'
-                             'header'   'header'
-                             'main'     'main'
-                             'aside'    'aside'
-                             'section'  'section'
-                             'footer'   'footer';
-        grid-template-columns: 100vw;
-
-
-    }
 }
 
 
