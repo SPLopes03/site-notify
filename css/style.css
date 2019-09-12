@@ -257,15 +257,6 @@
         flex-direction: column;
     }
 
-     .icones_menu{
-        /* display: grid;
-        grid-template-rows: repeat(3, 1fr); 
-         align-items: center;
-        margin: o auto;
-        grid-gap: 10px;
-        margin-top: 10px; */
-    } 
-
     main .icon_border {
         background-color: #2ac96f;
         margin: 10px 130px 0 120px;
