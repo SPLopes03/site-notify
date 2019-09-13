@@ -116,15 +116,12 @@
         display: flex;
     }
 
-    aside .video {
-        height: 60px;
-        width: 85px;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        margin: 2px 34%;
-        border-radius: 25%;
-        background-color: red;
+    aside a img {
+        height: 59px;
+        width: 90px;
+        border-radius: 20%;
+        margin-top: 2px;
+        cursor: pointer;
     }
     
     /* 
