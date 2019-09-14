@@ -19,14 +19,10 @@
         grid-template-columns: 100vw;
         text-decoration: none;
         font-family: 'Roboto', sans-serif;
-        /* align-items: center; */
+        /* align-items: center;x */
         text-align: center;
     }
-    
-    /* .conteudo {
-        grid-template-rows: repeat(6, 1fr);
-        align-items: center;
-    } */
+
     
     .conteudo > div:nth-child(3){
         display: grid;
@@ -91,7 +87,6 @@
         padding: 10px;
         font: 100 15px sans-serif;
         border-style: ridge;
-        display: inline-flex;
         border-width: 2px;
     }
 
@@ -110,19 +105,43 @@
     aside {
         grid-area: aside;
         background-color: #e3e3e3;
-        height: 350px;
-        flex-direction: column;
-        justify-content: center;
         display: flex;
+        margin-top: 20px;
     }
 
-    aside a img {
+
+    aside div:nth-child(3){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto;
+        border-radius: 50%;
+    }
+
+    aside div:nth-child(4){
+        padding:56.25% 0 0 0;
+        position:relative;
+        margin: 0 0 10px;
+    }
+
+    
+    iframe{
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        border-radius: 3%;
+    }
+
+
+    /* aside a img {
         height: 59px;
         width: 90px;
         border-radius: 20%;
         margin-top: 2px;
         cursor: pointer;
-    }
+    } */
     
     /* 
     aside p {
@@ -147,6 +166,7 @@
     body p{
         color: #8f8f8f;
         font-size: 16px;
+        margin: 15px 15px;
     }
 
     body h2{
@@ -208,7 +228,6 @@
         background-size: cover;
         background-position: center;
         grid-area: header;
-        /* height: 200px; */
     }
     
     header .icones img {
@@ -249,6 +268,10 @@
         border-radius: 50%;
         opacity: 0.7;
     }
+    
+    header div{
+        display: none;
+    }
 
     main {
         grid-area: main;
@@ -256,17 +279,19 @@
         flex-direction: column;
     }
 
-    main .icon_border {
-        background-color: #2ac96f;
-        margin: 10px 130px 0 120px;
-        border-radius: 50%;
-        display: flex;
+    main h2{
+        margin: 5px;
     }
 
+    main p{
+        margin: 0;
+    }
+    
     main img{
+        background-color: #2ac96f;
         padding: 15px;
-        /* background-color: #2ac96f;
-        border-radius: 50%; */
+        margin-top: 20px;
+        border-radius: 50%;
         width: 40px;
         height: 40px;
     }
@@ -279,7 +304,6 @@
 
     section{
         grid-area: section;
-        
     }
 
 
@@ -353,14 +377,14 @@ só modifiquei a section o resto se ajusta não precisa mexer */
         margin: 0px 5%;
         padding: 0px 115px;
     }
-
+/* 
     aside a img {
         height: 100%;
         width: 75%;
         border-radius: 20%;
         cursor: pointer;
         margin: auto; 
-    }
+    } */
 
     aside .email span {
         background-color: #2ac96f;
@@ -371,17 +395,17 @@ só modifiquei a section o resto se ajusta não precisa mexer */
         font: 550 22px sans-serif;
         cursor: pointer;
     }
-
+/* 
     aside .video {
         text-align: end;
-    }
-
-    aside #info {
+    } */
+/* 
+    aside .info {
         display: flex;
         flex-direction: column;
         align-items: end;
         text-align: justify;
-    }
+    } */
 
     figure{
         grid-column: 1/3;
