@@ -418,14 +418,29 @@ só modifiquei a section o resto se ajusta não precisa mexer */
         margin: 0 20px;
     }
 
-    header{
+    header {
         grid-column: 1/3;
         grid-row: 2;   
+        background-image: url(../images/banner.png);
+        background-size: 100% 80%;
+        background-position: top;
+        height: 70vh;
+        font-size: x-large;
+        background-repeat: no-repeat;
+    }
+
+    header h1 {
+        font-weight: 500;
     }
 
     header .border:hover {
         background-color: #2ac96f;
         opacity: 1;
+    }
+
+    header .icones {
+        display: flex;
+        padding: 0 75% 0 0%;
     }
 
     header .icones img:hover {
