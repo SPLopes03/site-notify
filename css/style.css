@@ -446,6 +446,11 @@ só modifiquei a section o resto se ajusta não precisa mexer */
     header .icones img:hover {
         opacity: 1;
     }
+
+    header img {
+        height: 80px;
+        width: 80px;
+    }
     
     main {
         grid-column: 1/3;
