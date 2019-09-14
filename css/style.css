@@ -1,8 +1,24 @@
-/*códigos comentados no tamanho de 320px*/
+/*  leia pra rir ou deixe um frase aleatória    clique nos pontinho ----> 
 
+            Notify do hell
+    
+    FÉ NO PAI QUE O INMIGO CAI
+    A maior derrota é nem tentar!
+
+    To fazendo na base do ódio, porém estou calmo!
+    **A maior derrota é acreditar que é capaz "indiano" :(
+    Meu café é minha vida e fod@... o sono
+    quem não tem olheira nem é porgramador
+    gosto de miojo por causa do caldinho de cancer
+    Na moral to com tanto interesse em aprender que fiquei desinteressado em mim interessa em ter interesse de aprender 
+    */
+
+
+/*códigos comentados no tamanho de 320px*/
 @media(min-width: 320px){
     
-/* Coloquei o body aqui para ficar melhor de visualizar o site e saber onde estar cada parte */ 
+    /* Coloquei o body aqui para ficar melhor de visualizar o site e saber onde estar cada parte */ 
+
     body {
         margin: 0;
         display: grid;
@@ -24,6 +40,35 @@
         display: flex;
         flex-direction: column;
     }
+
+    /* ========================================================================================= */
+
+    
+    /* configuração que afeta todos itens realcionados */
+    
+    body a{
+        text-decoration: none;
+        color: #a5a5a5;
+    }
+    
+    body p{
+        color: #8f8f8f;
+        font-size: 16px;
+        margin: 15px 15px;
+    }
+    
+    body h2{
+        justify-content: center;
+        
+    }
+    /*Remove a barra de corre lateral do navegador*/
+    body::-webkit-scrollbar{
+        width: 0px;
+        background: transparent;
+    }
+
+    /*==============================================================  */
+
 
     
     .conteudo > div:nth-child(3){
@@ -70,6 +115,7 @@
     .twitter, .facebook, .pinter, .googlepl, .linkedin, .youtube {
         width: 20px;
         margin: 5px;
+        display: flex;
     }           
     
     article{
@@ -106,62 +152,6 @@
         height:100%;
         border-radius: 3%;
     }
-
-
-    /* aside a img {
-        height: 59px;
-        width: 90px;
-        border-radius: 20%;
-        margin-top: 2px;
-        cursor: pointer;
-    } */
-    
-    /* 
-    aside p {
-        color: #8f8f8f;
-    } */
-
-
-
-/*Remove a barra de corre lateral do navegador*/
-    body::-webkit-scrollbar{
-        width: 0px;
-        background: transparent;
-    }
-
-/* configuração que afeta todo item realcionado */
-
-    body a{
-        text-decoration: none;
-        color: #a5a5a5;
-    }
-
-    body p{
-        color: #8f8f8f;
-        font-size: 16px;
-        margin: 15px 15px;
-    }
-
-    body h2{
-        justify-content: center;
-        
-    }
-
-/*==============================================================  */
-
-
-/* código antigo não apagar serve de exemplo */
-    /* 
-    figure{
-        display: grid;
-        flex-flow: wrap;
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-columns: repeat(5,1fr);
-        margin: 0 auto;
-        grid-gap: 10px; 
-        justify-content: spa ce-around;
-    } */
-
 
     figure{
         display: flex;
@@ -204,6 +194,7 @@
     
     
     header .icones img {
+        display: flex;
         opacity: 0.7;
         /* padding: 3px;
         border-radius: 50%; */
@@ -279,11 +270,12 @@
     section{
         grid-area: section;
     }
-
-
-    section div{
+    
+    
+    .redes{
         display: flex;
         margin: 7px 15px;
+        justify-content: center;
     }
 
     section .logos {
@@ -297,22 +289,38 @@
 }
 
 /* Acho que não vai precisa nesse tamnho pq ele ajusta sozinho */
-/* @media(min-width: 425px){
+@media(min-width: 530px){
     
-} */
+}
 
-/* TESTE!!! 
-só modifiquei a section o resto se ajusta não precisa mexer */
-@media(min-width: 430px){
-    /* figure{
-        display: flex;
-        flex-flow: wrap;
-        margin: 0 auto;
-        grid-gap: 10px;
-        justify-content: space-around;
-    } */
+@media(min-width: 540px){
+
+    header{
+
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    section .logos{
+        margin: 10px 10px;
+    }
+
 }
 /* ======================================================== */
+
+
+@media(min-width: 660px){
+
+    .redes{
+        margin: 20px auto;
+    }
+
+}
+
 
 @media(min-width:768px) {
 
