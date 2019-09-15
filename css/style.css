@@ -6,7 +6,7 @@
     A maior derrota é nem tentar!
 
     To fazendo na base do ódio, porém estou calmo!
-    **A maior derrota é acreditar que é capaz "indiano" :(
+    **A maior derrota é acreditar que é capaz
     Meu café é minha vida e fod@... o sono
     quem não tem olheira nem é porgramador
     gosto de miojo por causa do caldinho de cancer
@@ -239,7 +239,7 @@
         opacity: 1;
     }
     
-    header div{
+    header img{
         display: none;
     }
 
@@ -294,14 +294,11 @@
  /*fim media320px*/
 }
 
-/* Acho que não vai precisa nesse tamnho pq ele ajusta sozinho */
-/* @media(min-width: 530px){
-    
-} */
 
 
 
 @media(min-width: 375px){
+
     .icones{
         justify-content: flex-start;
     }
@@ -311,6 +308,15 @@
 
 
 @media(min-width: 500px){
+
+
+
+
+    .video{
+        margin: 0 auto;
+        width: 300px;
+        height: 60%;
+    }
 
     .email{
         margin-bottom: 30px;
@@ -418,29 +424,31 @@
 
 
     aside{
+        grid-area: aside;
         display: grid;
         grid-column: 1/3;
         grid-row: 4;
-        grid-template-columns: 1fr 1fr ;
         align-items: center;
-        flex-direction: column;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    aside p h2{
+        grid-column: 1;
+        margin-top: 100%;
     }
 
     .video{
         grid-column: 2/3;
-        margin-bottom:50%;
-        width: 100%;
-        height: 70%;
+        grid-row: 1/3;  
+        grid-column: 2/3;
+        margin: 0 auto;
     }
 
 
     .email{
-        /* margin-right: 50%; */
         grid-column: 1;
-        align-items: flex-start;
+        margin-bottom: 100%;
     }
-
-
 
 
 
@@ -450,56 +458,63 @@
         margin: 0 auto;
         width: 75%;        
     }
-
-    figure::-webkit-scrollbar{
-        width: 0px;
-        background: transparent;
-    }
-
     footer{
+        grid-row: 8;
         height: 100px;
     }
 
     header {
+        grid-area: header;
         grid-column: 1/3;
         grid-row: 2;   
-        background-position: top;
-        height: 70vh;
-        font-size: x-large;
-        background-repeat: no-repeat;
+        height: 40vw;
+    }
+    
+    /* header{
+        display: grid;
+        flex-direction: column;
+
+    } */
+
+
+    /* header p{
+        grid-column: 1;
     }
 
-    header h1 {
-        font-weight: 500;
-    }
-
-    header .border:hover {
-        background-color: #2ac96f;
-        opacity: 1;
-    }
-
-    header .icones {
-        display: flex;
-        padding: 0 75% 0 0%;
+    .icones {
+        grid-column: 1;
     }
     
     header .icones img:hover {
         cursor: pointer;
         opacity: 1;
-    }
-
-    header img {
-        height: 80px;
-        width: 80px;
-    }
+    } */
     
     main {
         grid-column: 1/3;
         grid-row: 3;
     }
+    .icones_main1 h2{
+        margin-top: 5px;
+   }
+
+    .icones_main1 p:nth-child(3){
+        margin-top: 0px;
+    }
+
+    .icones_main2 h2{
+        margin-top: 5px;
+   }
+
+   .icones_main2 p:nth-child(3){
+        margin-top: 0px;
+   }
+
+
 
     nav{
         grid-column: 1 / 3;
+        grid-row: 1;
         padding: 7px;
     }
 
